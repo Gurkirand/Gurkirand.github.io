@@ -5,11 +5,6 @@ share: false
 ---
 
 {% include base_path %}
+<h1 class="index_title">Welcome</h1>
+<h2 class="index_description">{{ site.description }}</h2>
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts }}</h3>
-
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% include paginator.html %}

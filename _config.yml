@@ -7,11 +7,11 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+title                    : "Gurkiran Dhaliwal"
+title_separator          : "|"
+name                     : "Gurkiran Dhaliwal"
+description              : "My blog, where I discuss the projects I work on and what I learn on the way."
+url                      : "https://gurkirand.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -37,7 +37,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "gurkirand_"
 facebook:
   username               :
   app_id                 :
@@ -49,6 +49,7 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+      - "https://github.com/Gurkirand"
 
 # Analytics
 analytics:
@@ -63,19 +64,19 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Gurkiran Dhaliwal"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
-  uri              :
+  bio              : "I work in Python, C, and Swift. Currently focussing on IOS applications."
+  location         : "San Francisco Bay Area"
+  email            : "gurkirand@gmail.com"
+  uri              : 
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "Gurkirand"
   google_plus      :
   keybase          :
   instagram        :
@@ -86,7 +87,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "gurkirand_"
   vine             :
   weibo            :
   xing             :
@@ -151,7 +152,21 @@ kramdown:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "US/Pacific"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+
 
 
 # Plugins

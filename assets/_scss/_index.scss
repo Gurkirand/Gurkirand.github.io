@@ -4,9 +4,8 @@
 
 .index_body {
   position: relative;
-  margin: 2em 0 0 2em;
+  margin: 1em 2em 0 1em;
   @include clearfix;
-  padding: 3em 0;
   animation: intro 0.3s both;
   animation-delay: 0.25s;
 

@@ -9,7 +9,6 @@
   padding: 1em 0 0 2em;  
   animation: intro 0.3s both;
   animation-delay: 0.25s;
-  color: $black;
 
   .wrapper {
     padding-left: 1em;
@@ -21,17 +20,12 @@
   }
 
   .index_title,
-  .index_excerpt,
-  .social-icons{
+  .index_excerpt {
     color: $black;
   }
 
-  h1 {
-    font-size: 3.5em;
-    line-height: 1.2;
-  }
-
   .index__title {
+    line-height: 1.2;
     font-size: 3.5em;
     font-weight: bold;
   }
@@ -39,6 +33,7 @@
   .index_excerpt {
     font-size: $type-size-2;
   }
+
   .social_urls-wrapper {
     position: relative;
     display: table-cell;

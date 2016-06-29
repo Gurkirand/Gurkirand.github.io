@@ -2,16 +2,39 @@
    INDEX
    ========================================================================== */
 
+.index_body {
+  position: relative;
+  margin: 2em 0 0 2em;
+  @include clearfix;
+  padding: 3em 0;
+  animation: intro 0.3s both;
+  animation-delay: 0.25s;
 
-.index_title {
-  margin: 0 0 0 0;
-  font-size: $type-size-3;
-  font-weight: bold;
-}
+  a {
+    color: #fff;
+  }
 
-.index_description {
-  margin: 1em 0 0 0.2em;
-  font-size: $type-size-5;
-  font-weight: normal;
-  border-bottom: none;
+  .wrapper {
+    padding-left: 1em;
+    padding-right: 1em;
+
+    @include breakpoint($x-large) {
+      max-width: $x-large;
+    }
+  }
+
+  .index_title,
+  .index_excerpt,
+  .index_social {
+    color: #000;
+  }
+
+  .index__title {
+    font-size: $type-size-2;
+    font-weight: bold;
+
+    @include breakpoint($small) {
+      font-size: $type-size-1;
+    }
+  }
 }
